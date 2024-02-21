@@ -1,3 +1,3 @@
-package { 'cowsays':
+package { 'cowsay':
   ensure => installed,
 }
