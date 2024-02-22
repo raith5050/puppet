@@ -30,3 +30,8 @@ file {'/examples/test_dir2':
   source => '/examples/test_dir',
   recurse => true,
 }
+
+file { '/examples/link_file':
+  ensure => link,
+  target => '/tmp/MOTD.txt',
+}
