@@ -21,3 +21,7 @@ file {'/tmp/hello4.txt':
   ensure => file
   content => 'please fucking work'
 }
+
+file { '/examples/test_dir':
+  ensure => directory
+}
