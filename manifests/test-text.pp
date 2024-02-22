@@ -16,3 +16,8 @@ file { '/tmp/hello3.txt':
 file {'/tmp/MOTD.txt':
   source => 'https://github.com/bitfield/puppet-beginners-guide-3/blob/571fe017716763f9dab3fff09d809d50c7bb133b/examples/files/motd.txt'
 }
+
+file {'/tmp/hello4.txt':
+  ensure => file
+  content => 'please fucking work'
+}
