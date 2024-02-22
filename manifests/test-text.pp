@@ -25,3 +25,8 @@ file {'/tmp/hello4.txt':
 file { '/examples/test_dir':
   ensure => directory,
 }
+
+file {'/examples/test_dir2':
+  source => '/examples/test_dir',
+  recurse => true,
+}
