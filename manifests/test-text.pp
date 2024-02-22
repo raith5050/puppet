@@ -15,7 +15,7 @@ file { '/tmp/hello3.txt':
 
 file {'/tmp/MOTD.txt':
   ensure => file,
-  content = 'MOTD.test.text',
+  content => 'MOTD.test.text',
 }
 
 file {'/tmp/hello4.txt':
