@@ -4,8 +4,8 @@ group { 'devs':
 }
 
 user { 'testuser':
-  ensure => present
-  uid    => '3001'
+  ensure => present,
+  uid    => '3001',
   home   => '/home/testuser',
   groups => ['devs'],
 }
