@@ -9,3 +9,9 @@ user { 'testuser':
   home   => '/home/testuser',
   groups => ['devs'],
 }
+
+user { 'codsmith':
+  ensure => present,
+  uid    => '3002',
+  home   => '/home/codsmith',
+}
