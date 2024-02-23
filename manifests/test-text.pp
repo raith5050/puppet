@@ -36,3 +36,9 @@ file { '/examples/link_file':
   ensure => link,
   target => '/tmp/MOTD.txt',
 }
+
+exec {'say hello':
+  command => '/bin/echo Hello, this is `whoami` >/tmp/hello-ubuntu.txt',
+  user    => 'codsmith',
+  creates => '/tmp/hello-ubuntu.txt'
+}
