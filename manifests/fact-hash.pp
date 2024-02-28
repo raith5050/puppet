@@ -1,1 +1,1 @@
-notice($facts['os']['architecture']
+notice($facts['os']['architecture'])
