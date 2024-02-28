@@ -21,7 +21,7 @@ $tasks.each | $task | {
   }
 }
 
-$nics = $facts['networking]['interfaces']
+$nics = $facts['networking']['interfaces']
 
 $nics.each | String $interface, Hash $attributes | {
   notice("interface ${interface} has IP ${attributes['ip']}")
