@@ -18,6 +18,6 @@ user { 'codsmith':
 
 lookup( 'users', Array[String], 'unique').each | String $username | {
   user { $username:
-    ensure => present,
+    ensure => absent,
   }
 }
