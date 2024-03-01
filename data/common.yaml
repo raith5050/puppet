@@ -48,12 +48,6 @@
     comment: "Force WWW"
     rewrite_cond: "%{literal('%')}{HTTP_HOST} !^www\\. [NC]"
     rewrite_rule: "^(.*)$ https://www.%{literal('%')}{HTTP_HOST}%{literal('%')}{REQUEST_URI} [R=301,L]"
-  users:
-    - 'katy'
-    - 'lark'
-    - 'bridget'
-    - 'hsing-hui'
-    - 'charles'
   users2:
     'katy':
       ensure: present
