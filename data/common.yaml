@@ -1,4 +1,8 @@
 ---
+  users:
+    - 'commonuser1'
+    - 'commonuser2'
+    - 'commonuser3'
   test_node: "common_node"
   test_os: "test_common"
   test_common: "test_common"

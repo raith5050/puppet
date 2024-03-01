@@ -15,3 +15,9 @@ user { 'codsmith':
   uid    => '3002',
   home   => '/home/codsmith',
 }
+
+lookup( 'users', Array[String], 'unique').each | String $username | {
+  user { $username:
+    ensure => present,
+  }
+}

@@ -1,3 +1,5 @@
 ---
 test_node: "os_node"
 test_os: "test_os"
+users:
+  - 'osuser1'
