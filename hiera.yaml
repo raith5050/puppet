@@ -7,8 +7,8 @@ defaults:
 
 hierarchy:
   - name: "Node Overrides"
-    path: "nodes/%{facts.hostname}"
+    path: "nodes/%{facts.hostname}.yaml"
   - name: "OS Overrides"
-    path: "os/%{facts.os.release.major}"
+    path: "os/%{facts.os.release.major}.yaml"
   - name: "Common defaults"
     path: "common.yaml"
