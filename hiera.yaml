@@ -6,5 +6,9 @@ defaults:
   data_hash: yaml_data
 
 hierarchy:
+  - name: "Node Overrides"
+    path: "nodes/%{facts.hostname}"
+  - name: "OS Overrides"
+    path: "os/%{facts.os.release.major}"
   - name: "Common defaults"
     path: "common.yaml"
