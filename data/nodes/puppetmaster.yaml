@@ -1,2 +1,2 @@
 ---
-test_node = "node"
+test_node: "node"
