@@ -6,6 +6,11 @@ defaults:
   data_hash: yaml_data
 
 hierarchy:
+  - name: "Secret date (encrypted)"
+    lookup_key: eyaml_lookup_key
+    path: "secret.eyaml"
+    options:
+      gpg_gnupghome: '/home/osboxes/.gnupg'
   - name: "Node Overrides"
     path: "nodes/%{facts.hostname}.yaml"
   - name: "OS Overrides"
