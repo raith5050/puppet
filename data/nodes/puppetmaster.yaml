@@ -2,3 +2,8 @@
 test_node: "node"
 users:
   - 'nodeuser1'
+users_attributes:
+    'nodeuser1':    
+      ensure: present
+      uid: 3000
+      shell: '/bin/bash'

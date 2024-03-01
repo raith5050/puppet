@@ -3,3 +3,8 @@ test_node: "os_node"
 test_os: "test_os"
 users:
   - 'osuser1'
+users_attributes:
+    'osuser1':
+      ensure: present
+      uid: 2000
+      shell: '/bin/bash'
