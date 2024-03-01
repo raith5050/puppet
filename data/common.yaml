@@ -48,7 +48,7 @@
     comment: "Force WWW"
     rewrite_cond: "%{literal('%')}{HTTP_HOST} !^www\\. [NC]"
     rewrite_rule: "^(.*)$ https://www.%{literal('%')}{HTTP_HOST}%{literal('%')}{REQUEST_URI} [R=301,L]"
-  users_atttributes:
+  users_attributes:
     'commonuser1':
       ensure: present
       uid: 1900
