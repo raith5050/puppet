@@ -1,4 +1,7 @@
 ---
+  test_node = "common_node"
+  test_os = "test_common"
+  test_common = "test_common"
   test: 'This is a test'
   consul_node: true
   apache_worker_factor: 100
