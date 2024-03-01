@@ -15,13 +15,13 @@ user { 'codsmith':
   uid    => '3002',
   home   => '/home/codsmith',
 }
-
+/*
 lookup( 'users', Array[String], 'unique').each | String $username | {
   user { $username:
     ensure => present,
   }
 }
-
+*/
 lookup('users_attributes', Hash, 'hash').each | String $username, Hash $attrs | {
   user { $username:
     * => $attrs,
