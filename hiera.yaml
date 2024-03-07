@@ -6,7 +6,7 @@ defaults:
   data_hash: yaml_data
 
 hierarchy:
-  - name: "Secret date (encrypted)"
+  - name: "Secret data (encrypted)"
     lookup_key: eyaml_lookup_key
     path: "secret.eyaml"
     options:
