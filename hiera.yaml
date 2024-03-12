@@ -10,7 +10,7 @@ hierarchy:
     lookup_key: eyaml_lookup_key
     path: "secret.eyaml"
     options:
-      gpg_gnupghome: '/home/osboxes/.gnupg'
+      gpg_gnupghome: '/root/.gnupg'
   - name: "Node Overrides"
     path: "nodes/%{facts.hostname}.yaml"
   - name: "OS Overrides"
