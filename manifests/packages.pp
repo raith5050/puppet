@@ -1,12 +1,19 @@
 
-$install_cowsay = false
+ensure_packages(['cowsay'],
+  {
+    'ensure' => 'latest',
+  }
+)
 
-if $install_cowsay {
-  package { 'cowsay':
+
+$install_calc = false
+
+if $install_calc {
+  package { 'calc':
     ensure => installed,
   }
 } else {
-  package { 'cowsay':
+  package { 'calc':
     ensure => absent,
   }
 }
